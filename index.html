@@ -3,8 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <title>Title of the document</title>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     </head>
+
+
     <body>
-        <h1>CS Creative 1</h1>
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                <source src="../videos/snow.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!--MAIN BANNER-->
+    	<div class="welcome">
+
+    		<!--NAVBAR-->
+    		<div class="links">
+    			<a href="index.html">Home |</a>
+    			<a href="resources.html">Resources |</a>
+    			<a data-target="modal1" class="modal-trigger">Contact</a>
+    		</div>
+    		<!--END NAVBAR-->
+
+    		<div class="message">
+    			<h1 class="bigtext">Friday Forecast</h1>
+    			<br>
+    			<img src="../images/social/linkedin.png">
+    			<img src="../images/social/pinterest.png">
+    			<img src="../images/social/facebook.png">
+    		</div>
+    	</div>
+
+    	<!--END MAIN BANNER-->
     </body>
 </html>
