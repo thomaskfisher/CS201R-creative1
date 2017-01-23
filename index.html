@@ -3,37 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <title>Title of the document</title>
-        <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <!-- Compiled and minified CSS -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     </head>
 
 
     <body>
         <div class="fullscreen-bg">
-            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-                <source src="videos/snow.mp4" type="video/mp4">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video" id="VID">
+                <source src="videos/rain.mp4" type="video/mp4">
             </video>
         </div>
 
         <!--MAIN BANNER-->
     	<div class="welcome">
-
-    		<!--NAVBAR-->
-    		<div class="links">
-    			<a href="index.html">Home |</a>
-    			<a href="resources.html">Resources |</a>
-    			<a data-target="modal1" class="modal-trigger">Contact</a>
-    		</div>
-    		<!--END NAVBAR-->
-
-    		<div class="message">
-    			<h1 class="bigtext">Friday Forecast</h1>
-    			<br>
-    			<img src="../images/social/linkedin.png">
-    			<img src="../images/social/pinterest.png">
-    			<img src="../images/social/facebook.png">
-    		</div>
+            <div class="message">
+                <h1>Change The Weather!</h1>
+                <button class="waves-effect waves-light btn" onclick="clouds()">Clouds</button>
+                <button class="waves-effect waves-light btn" onclick="snow()">Snow</button>
+                <button class="waves-effect waves-light btn" onclick="beach()">Beach</button>
+                <button class="waves-effect waves-light btn" onclick="rain()">Rain</button>
+            </div>
     	</div>
-
     	<!--END MAIN BANNER-->
+
+        <script>
+            function clouds() {
+                document.getElementById("VID").src = "videos/clouds.mp4";
+            }
+            function snow() {
+                document.getElementById("VID").src = "videos/snow.mp4";
+            }
+            function beach() {
+                document.getElementById("VID").src = "videos/beach.mp4";
+            }
+            function rain() {
+                document.getElementById("VID").src = "videos/rain.mp4";
+            }
+        </script>
     </body>
 </html>

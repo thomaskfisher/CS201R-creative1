@@ -36,7 +36,7 @@
  }
  @media (max-width: 767px) {
    .fullscreen-bg {
-     background: url('../images/rain2.jpg') center center / cover no-repeat;
+     background: url('images/truck.jpg') center center / cover no-repeat;
    }
    .fullscreen-bg__video {
      display: none;
@@ -51,19 +51,8 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	background: rgba(0, 0, 0, .3);
+	background: rgba(0, 0, 0, .0);
 }
-
-/*.welcome {
-	background: #09314F;
-	background-image: url(../images/rain.jpg);
-	background-size: 1536px 1536px;
-	height: 100%;
-	width: 100%;
-	min-height: 500px;
-	position: relative;
-	text-shadow: 1px 1px 1px #384B48;
-}*/
 .welcome .links {
 	height: 100%;
 	text-align: center;
